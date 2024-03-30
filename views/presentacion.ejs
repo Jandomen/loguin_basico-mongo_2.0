@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentacion</title>
+    <style>
+        .alert-good {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #c3e6cb;
+            border-radius: 4px;
+        }
+
+        .submit-btn {
+            background-color: greenyellow;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Es tu primera vez en bromichat?</h1>
+    <h2>Presentacion</h2>
+
+    <div class="alert-good">
+        <p><%= message %></p>
+    </div>
+
+    <h3>Es momento para que inicies sesion Mucha Suerte !!!</h3>
+    
+    <form action="/login" method="get">
+        <button class="submit-btn" type="submit">Continuar</button>
+    </form>          
+</body>
+</html>

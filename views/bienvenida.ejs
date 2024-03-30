@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>BIENVENIDO A BROMICHAT</h1>
+    
+    <form action="/login" method="get">
+        <button class="submit-btn" type="submit">Iniciar Sesión</button>
+    </form>
+
+    <form action="/signup" method="get">
+        <button class="submit-btn" type="submit">Registrarse</button>
+    </form>
+     
+    <% if (req.query.error) { %>
+        <div class="alert alert-danger">
+            <%= req.query.error %>
+        </div>
+    <% } %>
+
+</body>
+</html>
